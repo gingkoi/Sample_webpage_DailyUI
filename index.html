@@ -8,15 +8,189 @@
     <script>
       tailwind.config = {
         theme: {
+          fontFamily: {
+            Lato: ["Lato", "sans-serif"],
+            Inter: ["Inter", "sans-serif"],
+            Pro: ["Source Sans Pro", "sans-serif"],
+          },
           extend: {
             colors: {
               clifford: "#da373d",
+              main_blue: "#246cfc",
+              main_pink: "#f2a8a3",
             },
           },
         },
       };
     </script>
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;900&family=Lato:wght@300;400;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <title>Sample Dailt UI Page</title>
   </head>
-  <body></body>
+  <body class="px-32">
+    <!-- navbar -->
+    <div class="my-20 px-10">
+      <nav class="text-main_blue font-Lato text-5xl font-semibold">
+        Daily UI
+      </nav>
+    </div>
+    <!-- Intro-section -->
+    <div class="flex justify-center space-x-24 py-10">
+      <!-- card -->
+      <div class="flex justify-center items-center space-x-10">
+        <!-- card_1 -->
+        <div class="h-[460px] w-[300px] bg-main_blue rounded-2xl"></div>
+        <!-- card_2 -->
+        <div class="h-[460px] w-[300px] bg-main_pink rounded-2xl"></div>
+      </div>
+      <!-- font & email -->
+      <div class="flex flex-col justify-center space-y-16">
+        <div class="flex flex-col text-center justify-center font-Inter font-black tracking-tight text-8xl space-y-5">
+            <div class="text-main_pink">Become a</div>
+            <div class="text-main_blue">Better Designer</div>
+            <div class="text-main_pink">in 100 Days</div>
+        </div>
+        <div class="text-center font-Lato text-main_blue font-thin text-3xl">
+            Daily UI is a series of daily <b class="font-bold">Design Challenges</b><br><b class="font-bold">Inspiration</b> and
+            <b class="font-bold">Surprise Rewards</b>!
+          </div>
+        <!-- email -->
+          <div class="flex justify-center space-x-5">
+                <div class="py-4 pl-8 pr-28 border border-main_blue rounded-xl text-xl font-bold font-Lato text-slate-200">
+                    Email Address...
+                </div>
+                <div class="flex justify-center items-center py-3 px-7 rounded-xl bg-main_blue text-white font-Lato font-bold tracking-widest text-xl hover:bg-main_pink">
+                    Get Started
+                </div>
+            </div>
+        <div>
+            <p class="font-Lato text-center text-xl text-slate-200">100% FREE. No Spam. No Affiliate Links. No data sharing.</p>
+        </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- mid-section -->
+    <div class="flex flex-col text-center text-8xl font-Inter font-bold space-y-5 my-36">
+        <p class="text-main_blue">Join Over 250,000+</p>
+        <p class="text-main_pink">of the World's Best</p>
+        <p class="text-main_blue">UI & UX Designers</p>
+    </div>
+    <!-- sponsors & partners -->
+    <div class="flex justify-center">
+        <img src="./img/Screenshot from 2023-02-02 16-25-01.png" alt="">
+    </div>
+    <!-- community -->
+    <div class="font-Inter my-36">
+        <p class="text-main_blue font-black tracking-wide text-center text-7xl">And See What the Design<br>Community is Saying</p>
+    </div>
+    <!-- clients / feedback -->
+    <div class="flex justify-around my-36 py-20">
+        <div class="flex flex-col justify-center">
+            <div class="bg-yellow-500 rounded-full mx-auto px-5 py-5">JH</div>
+            <div class="text-center font-Pro text-xl my-5">
+                <p class="text-slate-300">"Daily UI is awesome because it gives <br>
+                    me an opportunity to flex my creative <br>
+                     muscle without a whole lot of <br> limitation."</p>
+                <p class="mt-3 font-bold text-main_blue">James Hsu</p>
+                <p class="text-main_blue font-thin">UI Designer, Disney</p>
+            </div>
+        </div>
+        <div class="flex flex-col justify-center">
+            <div class="bg-yellow-500 rounded-full mx-auto px-5 py-5">DT</div>
+            <div class="text-center font-Pro text-xl my-5">
+                <p class="text-slate-300">
+                    "It gave me an opportunity to improve<br>my time management while honing in<br>on my interface motion design craft."
+                </p>
+                <p class="mt-3 font-bold text-main_blue">Derek Torsani</p>
+                <p class="text-main_blue font-thin">Senior Designer, Oracle</p>
+            </div>
+        </div>
+        <div class="flex flex-col justify-center">
+            <div class="bg-yellow-500 rounded-full mx-auto px-5 py-5">KE</div>
+            <div class="text-center font-Pro text-xl my-5">
+                <p class="text-slate-300">
+                    "Love using the Daily UI challenge to<br>experiment. The prompts are great to<br>test out interactions, play with visual<br>styles, etc."
+                </p>
+                <p class="mt-3 font-bold text-main_blue">Kelsea Everett</p>
+                <p class="text-main_blue font-thin">Design Manager, Netflix</p>
+            </div>
+        </div>
+        <div class="flex flex-col justify-center">
+            <div class="bg-yellow-500 rounded-full mx-auto px-5 py-5">FP</div>
+            <div class="text-center font-Pro text-xl my-5">
+                <p class="text-slate-300">
+                    "I was able to practice, research,<br>discover, improve, experiment, play<br>and, of course, work hard. Thank you<br>Daily UI"
+                </p>
+                <p class="mt-3 font-bold text-main_blue">Francesco Paradiso</p>
+                <p class="text-main_blue font-thin">Freelance Designer</p>
+            </div>
+        </div>
+        </div>
+            <!-- last font -->
+        <div class="font-Inter font-black text-8xl text-center text-main_blue leading-normal my-36">
+            <p><span class="text-main_pink">Learn to </span> Improve Your Skills<br>& <span class="text-main_pink">Build Your Portfolio</span></p>
+        </div>
+
+            <!-- 3 cards -->
+        <div class="flex justify-around space-x-16 py-20">
+            <div class="flex flex-col text-main_blue text-center space-y-5">
+                <p class="text-9xl">📮</p>
+                <p class="font-Inter text-5xl font-medium">Get Challenges</p>
+                <p class="text-xl text-slate-300">You'll get a unique User Interface<br>
+                    design challenge for 100 days<br>
+                    (sent Monday - Friday)</p>
+            </div>
+            <div class="flex flex-col text-main_blue text-center space-y-5">
+                <p class="text-9xl">📣</p>
+                <p class="font-Inter text-5xl font-medium">Share Your Work</p>
+                <p class="text-xl text-slate-300">Interpret and then create your own design to<br>share on Dribbble or Twitter with <b>#dailyui</b></p>
+            </div>
+            <div class="flex flex-col text-main_blue text-center space-y-5">
+                <p class="text-9xl">🎉</p>
+                <p class="font-Inter text-5xl font-medium">Earn Rewards</p>
+                <p class="text-xl text-slate-300">Randomly earn rewards such as premium<br>design resources, product discount codes, and<br>more!</p>
+            </div>
+        </div>
+            <!-- email section -->
+            <div class="flex justify-center py-10 my-20">
+                <div class="flex flex-col text-main_blue text-center space-y-16">
+                    <h3 class="font-Inter font-black text-8xl">Become a<br>Better Designer</h3>
+                    <p class="font-Lato font-thin text-3xl">See why over <b>250,000+</b> designers have<br>
+                        joined the Daily UI challenge
+                    </p>
+                    <div class="flex justify-center space-x-5">
+                        <div class="py-4 pl-8 pr-28 border border-main_blue rounded-xl text-xl font-bold font-Lato text-slate-200">
+                            Email Address...
+                        </div>
+                        <div class="flex justify-center items-center py-3 px-7 rounded-xl bg-main_blue text-white font-Lato font-bold tracking-widest text-xl hover:bg-main_pink">
+                            Get Started
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer -->
+            <div class="flex justify-around space-x-10 my-20">
+                <div class="flex flex-col text-main_blue space-y-5">
+                    <a href="" class="font-Inter font-bold text-5xl hover:text-main_pink">About Us</a>
+                    <p class="font-Lato text-xl font-thin">Answers to common questions<br>about Daily UI, how it works, and<br>more.</p>
+                </div>
+                <div class="flex flex-col text-main_blue space-y-5">
+                    <a href="" class="font-Inter font-bold text-5xl hover:text-main_pink">Sponsorship</a>
+                    <p class="font-Lato text-xl font-thin">Learn how we can help your brand<br>reach a niche designer audience.</p>
+                </div>
+                <div class="flex flex-col text-main_blue space-y-5">
+                    <a href="" class="font-Inter font-bold text-5xl hover:text-main_pink">Be Featured</a>
+                    <p class="font-Lato text-xl font-thin">Have a design you'd like to share<br>with the world? Share and we might<br>feature it.</p>
+                </div>
+                <div class="flex flex-col text-main_blue space-y-5">
+                    <a href="" class="font-Inter font-bold text-5xl hover:text-main_pink">Follow Along</a>
+                    <p class="font-Lato text-xl font-thin">Social Links</p>
+                </div>
+            </div>
+            <div class="font-Pro font-thin text-slate-300 text-2xl">
+                © 2022 Daily UI. All Rights Reserved. Hero UI by Jonathan David Post. Sponsored by Remote Jobs
+            </div>
+  </body>
 </html>
